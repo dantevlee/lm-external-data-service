@@ -7,4 +7,5 @@ app.use(cors())
 
 
 app.use('/api', require('./components/controller/NutritionController'))
+app.use('/api', require('./components/controller/AccountsController') )
 app.listen(port, () => console.log(`Server is listening on port ${port}`))
